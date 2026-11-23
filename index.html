@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kaliya Chicken Shop - Digital Visiting Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    body {
+      background: #fdf6f4;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+    .card {
+      background: #ffffff;
+      width: 100%;
+      max-width: 430px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(127, 29, 29, 0.12);
+      height: fit-content;
+    }
+    .header {
+      background: linear-gradient(135deg, #7f1d1d, #b91c1c);
+      color: #ffffff;
+      text-align: center;
+      padding: 26px 20px 24px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+    }
+    .pic-wrap {
+      width: 98px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 3px solid rgba(255, 255, 255, 0.92);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+      margin: 0 auto 14px;
+      background: #450a0a;
+    }
+    .profile-pic {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .header h1 {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .header p {
+      font-size: 14px;
+      opacity: 0.94;
+    }
+    .quick-actions {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background: #450a0a;
+      border-top: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .quick-actions a {
+      color: #ffffff;
+      text-decoration: none;
+      text-align: center;
+      padding: 14px 8px;
+      font-size: 13px;
+      font-weight: 600;
+      border-right: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .quick-actions a:last-child {
+      border-right: none;
+    }
+    .quick-actions span {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    .cta-wrap {
+      padding: 20px 20px 8px;
+    }
+    .whatsapp-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: #b91c1c;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15.5px;
+      padding: 14px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(185, 28, 28, 0.28);
+    }
+    .details {
+      padding: 12px 20px 24px;
+    }
+    .row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid #fee2e2;
+    }
+    .row:last-child {
+      border-bottom: none;
+    }
+    .icon {
+      font-size: 20px;
+      width: 28px;
+      text-align: center;
+      margin-top: 2px;
+    }
+    .info h3 {
+      font-size: 15px;
+      color: #1f2937;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+    .info p {
+      font-size: 14px;
+      color: #57534e;
+      line-height: 1.5;
+    }
+    .phone-link {
+      display: inline-block;
+      color: #7f1d1d;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 2px;
+    }
+    .map-link {
+      display: inline-block;
+      margin-top: 8px;
+      color: #b91c1c;
+      font-size: 13.5px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .save-btn {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 13px;
+      background: #fdf6f4;
+      color: #7f1d1d;
+      border: 1.5px solid #fecaca;
+      border-radius: 12px;
+      font-size: 14.5px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="badge">FRESH CHICKEN SHOP</div>
+      <div class="pic-wrap">
+        <img class="profile-pic" src="Screenshot_20261123-174412~2.jpg" alt="Mohd. Asif - Kaliya Chicken Shop" />
+      </div>
+      <h1>Kaliya Chicken Shop</h1>
+      <p>Prop. Mohd. Asif</p>
+    </div>
+
+    <div class="quick-actions">
+      <a href="tel:+918687118415"><span>📞</span>Call</a>
+      <a href="https://wa.me/918687118415" target="_blank"><span>💬</span>WhatsApp</a>
+      <a href="https://maps.app.goo.gl/BagLWNhXE7LytqH5A" target="_blank"><span>📍</span>Location</a>
+    </div>
+
+    <div class="cta-wrap">
+      <a class="whatsapp-btn" href="https://wa.me/918687118415" target="_blank">
+        Chat / Order on WhatsApp
+      </a>
+    </div>
+
+    <div class="details">
+      <div class="row">
+        <div class="icon">👤</div>
+        <div class="info">
+          <h3>Proprietor</h3>
+          <p>Mohd. Asif</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="icon">📱</div>
+        <div class="info">
+          <h3>Mobile &amp; WhatsApp</h3>
+          <p>
+            <a class="phone-link" href="tel:+918687118415">+91 8687118415</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="icon">🍗</div>
+        <div class="info">
+          <h3>Shop Name</h3>
+          <p>Kaliya Chicken Shop</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="icon">📍</div>
+        <div class="info">
+          <h3>Address / Location</h3>
+          <p>Tap below to open exact shop location on Google Maps</p>
+          <a class="map-link" href="https://maps.app.goo.gl/BagLWNhXE7LytqH5A" target="_blank">
+            Open in Google Maps →
+          </a>
+        </div>
+      </div>
+
+      <button class="save-btn" onclick="downloadVCard()">
+        + Save Contact to Phone
+      </button>
+    </div>
+  </div>
+
+  <script>
+    function downloadVCard() {
+      const vcard = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "N:Asif;Mohd.;;;",
+        "FN:Mohd. Asif - Kaliya Chicken Shop",
+        "ORG:Kaliya Chicken Shop",
+        "TITLE:Proprietor",
+        "TEL;TYPE=CELL,VOICE:+918687118415",
+        "URL:https://maps.app.goo.gl/BagLWNhXE7LytqH5A",
+        "END:VCARD"
+      ].join("\n");
+
+      const blob = new Blob([vcard], { type: "text/vcard;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "Kaliya_Chicken_Shop.vcf";
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>
